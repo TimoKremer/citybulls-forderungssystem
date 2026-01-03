@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>City Bulls – Forderungssystem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="Citybulls.png" alt="City Bulls Logo" class="logo">
+    <h1>City Bulls</h1>
+    <p class="subtitle">Forderungssystem</p>
+
+    <div class="top-controls">
+      <button id="themeToggle">🌙 Dark</button>
+      <button id="btnMatchday">Spieltag +1</button>
+      <button id="btnReset">Reset</button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Rangliste</h2>
+      <p class="small">Tipp: Klick auf einen Spieler setzt ihn als „aktiv“ (rot markiert).</p>
+      <div id="app"></div>
+    </section>
+
+    <section>
+      <h2>Aktive Sperren</h2>
+      <div id="locks"></div>
+    </section>
+
+    <section>
+      <h2>Preseason</h2>
+      <div id="preseason"></div>
+    </section>
+
+    <section>
+      <h2>Ergebnis-Historie</h2>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
