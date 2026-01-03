@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>City Bulls – Forderungssystem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#151515">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="brand">
+        <img src="Citybulls.png" alt="City Bulls Wappen" class="logo">
+        <div class="brandText">
+            <h1>City Bulls</h1>
+            <span class="subtitle">Forderungssystem</span>
+        </div>
+    </div>
+
+    <button id="themeToggle" class="themeToggle" type="button" title="Dark/Light umschalten">
+        🌙 Dark
+    </button>
+</header>
+
+<div class="container">
+
+    <div class="controls card">
+        <button id="btnMatchday">Spieltag +1</button>
+        <span id="matchdayInfo"></span>
+        <button id="btnReset" class="secondary">Reset</button>
+    </div>
+
+    <div id="status" class="status card"></div>
+
+    <div class="card">
+        <h2>Rangliste</h2>
+        <div class="small hint">Tipp: Klick auf einen Spieler setzt ihn als „aktiv“ (rot markiert).</div>
+        <div id="app"></div>
+    </div>
+
+    <div class="card">
+        <h2>Aktive Sperren</h2>
+        <div id="locks"></div>
+    </div>
+
+    <div class="card">
+        <h2>Preseason</h2>
+        <div id="preseason"></div>
+    </div>
+
+    <div class="card">
+        <h2>Ergebnis-Historie</h2>
+        <div id="history"></div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
